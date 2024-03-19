@@ -11,7 +11,7 @@ public void displaydata() {
 public complex add (complex z1 , complex z2) {
 	complex sum = new complex () ;
 	sum.real = z1.real  + z2.real ;
-	sum.image = z1.image + z1.image ;
+	sum.image = z1.image + z2.image ;
 	return sum ; 
 }
 public class Program_2 {
