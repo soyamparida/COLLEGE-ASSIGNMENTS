@@ -1,7 +1,6 @@
 class pointtype {
 	int x  ; 
 	int  y ; 
-	
 	pointtype(int x , int y){
 		this.x = x ; 
 		this.y = y ;
@@ -19,8 +18,9 @@ class pointtype {
 	public void printCcordinates () {
 		System.out.println("(" + x + "," + y + "0");
 	}
+}
 	class circle extends pointtype {
- int radius ;
+                  int radius ;
 		circle(int x, int y ,  int radius) {
 			super(x, y);
 			this.radius = radius ;
@@ -37,7 +37,6 @@ class pointtype {
 			System.out.println("Circumference:"+circumference);
 		}
 	}
-}
 public class HA5 {
 
 	public static void main(String[] args) {
@@ -47,14 +46,12 @@ System.out.println("Coordinates of the point: ");
 point.printCcordinates();
 
 // creating circlce with the point as the center and radius 5
-/*
-circle c = new circle (3,4,5) ;
-*/
-/*
+
+circle c = new circle (3,4,5) ; 
 c.printradius(); 
 c.printarea();
 c.printcircumference ();
-*/
+
 	}
 
 }
