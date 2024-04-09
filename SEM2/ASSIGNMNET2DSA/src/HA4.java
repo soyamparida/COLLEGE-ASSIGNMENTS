@@ -1,5 +1,4 @@
 
-	
 	class road { 
 		int meters ;
 		int centimeters ;
@@ -12,7 +11,6 @@
 		System.out.println("The distance in meters is " + meters);
 		System.out.println("The distance in centimeters is " + centimeters);
 	}
-	
 public int sum() {
 	return this.meters + this.centimeters ;
 }
