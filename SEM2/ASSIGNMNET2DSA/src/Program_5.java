@@ -1,5 +1,4 @@
 
-/*
 class person  {
 	String name ; 
 	int age ;
@@ -7,6 +6,7 @@ class person  {
 		this.name = name ;
 		this.age = age ; 
 	}
+}
 	class Employee12 extends person { 
 		int Eid ; 
 		int salary ; 
@@ -23,18 +23,12 @@ class person  {
 		}
 	}
 	
-}
-*/
 public class Program_5 {
 
-	public static void main(String[] args) {
-		/*
-		// TODO Auto-generated method stub
-		/*
+	public static void main(String[]args){
 		person  p = new person ("soyam",18) ; 
 		Employee emp = new Employee ();
-emp.display();
-*/
+                    emp.display();
 	}
 
 }
