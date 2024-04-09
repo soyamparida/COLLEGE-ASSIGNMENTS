@@ -18,6 +18,7 @@ CSE(int marksIcp , int marksDSA , int algoDesign){
 		// TODO Auto-generated method stub
 		return this.percentage=(this.marksICP+this.marksDSA+this.algoDesign / 100) * 100;
 	}
+}
 class NonCSE extends Marks { 
 	int enggMechanics ;
 NonCSE (int marksIcp , int marksDSA ,int enggMechanics ) { 
@@ -33,14 +34,12 @@ NonCSE (int marksIcp , int marksDSA ,int enggMechanics ) {
 	}
 	
 }
-}
 public class Program_6 {
 	public static void main(String[] args) {
 		CSE c1  = new CSE (34, 67 , 88);
 		System.out.println("The percentage of the cse student is : " + c1.percentage );
-		/*
 		NonCSE c2 = new NonCSE () ; 
 		System.out.println("The percentage of the cse student is : " + c2.percentage );
-	*/
+
 	}
 }
