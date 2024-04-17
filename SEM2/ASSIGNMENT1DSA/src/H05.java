@@ -14,7 +14,15 @@ public class H05 {
                 matrix[i][j] = random.nextInt(2); // Generates random number 0 or 1
             }
         }
-
+ public static void printMatrix(int[][] matrix) {
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                System.out.print(matrix[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+		
         // Print the matrix
         System.out.println("Randomly filled 4-by-4 matrix:");
         printMatrix(matrix);
@@ -50,17 +58,6 @@ public class H05 {
         System.out.println("First row with the most 1s: " + rowIndexWithMostOnes);
         System.out.println("First column with the most 1s: " + colIndexWithMostOnes);
     }
-
-    // Method to print the matrix
-    public static void printMatrix(int[][] matrix) {
-        for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[i].length; j++) {
-                System.out.print(matrix[i][j] + " ");
-            }
-            System.out.println();
-        }
-    }
-
     // Method to count the number of 1s in a row
     public static int countOnes(int[] row) {
         int count = 0;
