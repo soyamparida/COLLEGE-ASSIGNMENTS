@@ -7,10 +7,10 @@ class person  {
 		this.age = age ; 
 	}
 }
-	class Employee12 extends person { 
+	class Employee extends person { 
 		int Eid ; 
 		int salary ; 
-		Employee12 (String name , int age  , int Eid , int salary ){
+		Employee(String name , int age  , int Eid , int salary ){
 			super(name,age) ;
 			this.Eid = Eid ;
 			this.salary = salary ; 
@@ -26,9 +26,12 @@ class person  {
 public class Program_5 {
 
 	public static void main(String[]args){
-		person  p = new person ("soyam",18) ; 
-		Employee emp = new Employee ();
-                    emp.display();
+		        Employee e1 = new Employee("John Doe", 30, 123456, 50000);
+        Employee e2 = new Employee("Jane Doe", 29, 214365, 33000);
+
+        e1.empDisplay();
+        e2.empDisplay();
+
 	}
 
 }
