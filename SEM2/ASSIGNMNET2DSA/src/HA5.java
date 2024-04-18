@@ -16,7 +16,7 @@ class pointtype {
 		return y ;
 	}
 	public void printCcordinates () {
-		System.out.println("(" + x + "," + y + "0");
+		System.out.println("(" + x + "," + y + ")");
 	}
 }
 	class circle extends pointtype {
