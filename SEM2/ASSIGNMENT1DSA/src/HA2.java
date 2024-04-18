@@ -6,8 +6,6 @@ public class HA2 {
 
         System.out.println("Enter number of lines: ");
         int n = sc.nextInt();
-        sc.nextLine();
-
         String[] in = new String[n];
 
         System.out.println("Enter lines: ");
