@@ -33,8 +33,9 @@ pro[2] = new product (2,3,4) ;
 pro[3] = new product (2,3,4) ;
 pro[4] = new product (2,3,4) ;
 for (int i = 0 ; i < pro.length ; i++ ){
-pro[i].display
-}
-System.out.println("Total Payable amount:" + pro[0].getTotalprice ()+ pro[1].getTotalprice()+ pro[2].getTotalprice()+ pro[3].getTotalprice()+ pro[4].getTotalprice()+"INR");
-}
+pro[i].display();
+	}
+	int totalprice =  pro[0].totalprice+ pro[1].totalprice+ pro[2].totalprice+ pro[3].totalprice+ pro[4].totalprice ;
+	System.out.println("The total price of the items is " + totalprice);
+	}
 }
