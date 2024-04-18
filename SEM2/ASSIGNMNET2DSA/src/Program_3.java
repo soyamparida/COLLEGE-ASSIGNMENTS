@@ -25,18 +25,16 @@ class product {
 public class Program_3 {
 
 	public static void main(String[] args) {
-	
+	product [] pro = new product [5] ;
 System.out.println("Product Details");
-product p1 = new product (2,3,4) ;
-p1.display();
-product p2 = new product (2,3,4) ;
-p1.display();
-product p3 = new product (2,3,4) ;
-p1.display();
-product p4 = new product (2,3,4) ;
-p1.display();
-product p5 = new product (2,3,4) ;
-p1.display();
-System.out.println("Total Payable amount:" + p1.totalprice+p2.totalprice+p3.totalprice+p4.totalprice+p5.totalprice+"INR");
+pro[0] = new product (2,3,4) ;
+pro[1] = new product (2,3,4) ;
+pro[2] = new product (2,3,4) ;
+pro[3] = new product (2,3,4) ;
+pro[4] = new product (2,3,4) ;
+for (int i = 0 ; i < pro.length ; i++ ){
+pro[i].display
+}
+System.out.println("Total Payable amount:" + pro[0].getTotalprice ()+ pro[1].getTotalprice()+ pro[2].getTotalprice()+ pro[3].getTotalprice()+ pro[4].getTotalprice()+"INR");
 }
 }
