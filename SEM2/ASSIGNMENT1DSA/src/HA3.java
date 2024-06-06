@@ -40,3 +40,4 @@ public class HA3 {
  *      Dot product of a and b:
  *      6 5 0 27
  */
+// Thanks to udhav for the sol for this question!
