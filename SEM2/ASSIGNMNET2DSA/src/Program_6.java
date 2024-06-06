@@ -38,7 +38,7 @@ public class Program_6 {
 	public static void main(String[] args) {
 		CSE c1  = new CSE (34, 67 , 88);
 		System.out.println("The percentage of the cse student is : " + c1.percentage );
-		NonCSE c2 = new NonCSE () ; 
+		NonCSE c2 = new NonCSE (88 , 67 , 34) ; 
 		System.out.println("The percentage of the cse student is : " + c2.percentage );
 
 	}
