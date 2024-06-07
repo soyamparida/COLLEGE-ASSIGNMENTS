@@ -1,23 +1,37 @@
-import java.util.Scanner ; 
-public class q9 {
+import java.util.Scanner;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner sc = new Scanner (System.in) ; 
-System.out.println("Enter  a 4 by 4 matrix row  by column ");
+public class Q09 {
+    public static double sumMajorDiagonal(double[][] m) {
+        double sum = 0;
+        for (int i = 0; i < m.length; i++) {
+            sum += m[i][i];
+        }
+        return sum;
+    }
 
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-int row = sc.nextInt() ; 
-int column = sc.nextInt() ; 
-double arr [] [] = new double[row][column] ;
-for (int i = 0; i<row ; i++) { 
-	for (int j = 0 ; j < column ; j++) { 
-		arr[i][j] = sc.nextInt();
-		System.out.print(arr[i][j]+" ");
-	}
-	System.out.println("");
+        int row = 4, col = 4;
+        double[][] arr = new double[row][col];
+
+        System.out.print("Enter arr 4-by-4 matrix row by row: ");
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                arr[i][j] = sc.nextDouble();
+            }
+        }
+
+        double sum = sumMajorDiagonal(arr);
+        System.out.println("Sum of the elements in the major diagonal is " + sum);
+        sc.close();
+    }
 }
 
-	}
+/*
+ *  Output:
+ *      Enter arr 4-by-4 matrix row by row: 1 2 3 4 5 6.5 7 8 9 10 11 12 13 14 15 16
+ *      Sum of the elements in the major diagonal is 34.5
+ */
 
 }
