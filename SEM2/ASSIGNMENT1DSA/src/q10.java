@@ -2,6 +2,7 @@ import java.util.Scanner ;
 
 public class q10 {
 public static void main(String[] args) {
+public static double sumColumn(double[][] m, int columnIndex) {
   double sum = 0;
         for (double[] row : m) {
             sum += row[columnIndex];
